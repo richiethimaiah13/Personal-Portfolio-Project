@@ -1,0 +1,19 @@
+/* style.css */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+}
