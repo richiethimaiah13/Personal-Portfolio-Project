@@ -1,25 +1,45 @@
 /* style.css */
 
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: "Indie Flower";
+    font-weight: 600;
 }
 
 
 header {
     display: flex;
     flex-direction: column;
+    padding: 0px 10%;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0px 200px;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+
+.name {
+    flex-shrink: 0;
 }
 
 nav {
     display: flex;
+    gap: 8px;
 }
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 
 .hero-text {
     display: flex;
@@ -27,15 +47,15 @@ nav {
 } 
 
 /* above is for header */
-/*
+
 main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0px 200px;
-    /* gap: 2px; */
-/*  
+    padding: 0px 10%;
+    gap: 2px;
+
 }
 
 main > * {
@@ -53,4 +73,3 @@ main > * {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
