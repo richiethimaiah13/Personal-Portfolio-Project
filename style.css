@@ -1,26 +1,36 @@
 /* style.css */
 
-
 * {
     padding: 0px;
-    margin: 0px;
-    font-family: "Indie Flower";
-    font-weight: 600;
+    margin:  0px;
+    box-sizing: border-box;
+    
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 header {
     display: flex;
     flex-direction: column;
-    padding: 0px 10%;
+    margin: 8px 0px;
+    /* border:  2px solid red; */
 }
 
-.header {
+.header{
     display: flex;
-    justify-content: space-between;
     font-size: 24px;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
+
+/* .header > * {
+    border: 2px solid black;
+} */
 
 .name {
     flex-shrink: 0;
@@ -28,7 +38,7 @@ header {
 
 nav {
     display: flex;
-    gap: 8px;
+    gap: 16px;
 }
 
 nav a {
@@ -40,36 +50,40 @@ nav a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    align-self: center;
+    font-size: 36px;
+    padding: 8px;
+    flex-shrink: 0;
+    font-family: "Indie Flower";
+    font-weight: 600;
+}
 
-.hero-text {
-    display: flex;
-    justify-content: center;
-} 
-
-/* above is for header */
+/* above css code is for header section */
 
 main {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0px 10%;
-    gap: 2px;
-
-}
-
-main > * {
-    border: 2px solid black;
+    justify-content: center;
 }
 
 .main-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-basis: 60%;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.main-section ul {
+    list-style: none;
 }
 
 .top-half {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
