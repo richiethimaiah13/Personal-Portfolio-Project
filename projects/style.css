@@ -14,8 +14,13 @@ body {
     height: 100vh;
 }
 
-main {
+header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+header div {
+    flex: 1 0 
 }
